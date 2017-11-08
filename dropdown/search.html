@@ -74,20 +74,30 @@ $('.windowForm').submit(function(e){
 						   <div class="dropdown">
 						   <select name="scope" id="searchLibrary" class="custom-dropdown-menu">
 								<option name="scope" value="sz:31296" selected>PALNI</option>
-								<option name="scope" value="">Libraries WorldWide</option>					
+								<option name="scope" value="">Libraries WorldWide</option>
 							</select>
 							</div>
 							<input type="submit" class="headersubmit" value="&#xf002;" title="Search">
                           <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-md-6">
                               <div class="clusterResults">
                                 <fieldset>
                                   <legend>Group related editions?</legend>
                                   <input type="radio" name="clusterResults" id="tab1-clusterResults-input-yes" value="on" checked />
-                                  <label for="tab1-clusterResults-input-yes">Yes (default behavior)</label>
+                                  <label for="tab1-clusterResults-input-yes" class="control-label">Yes (default behavior)</label>
                                   <input type="radio" name="clusterResults" id="tab1-clusterResults-input-no" value="off" />
-                                  <label for="tab1-clusterResults-input-no">No</label>
+                                  <label for="tab1-clusterResults-input-no" class="control-label">No</label>
                                 </fieldset>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="sort">
+                                <label for="tab1-sortKey-input" class="control-label">Sort by:</label>
+                                <select name="sortKey" id="tab1-sortKey-input" class="form-control">
+                                  <option value="RECENCY">Recency</option>
+                                  <option value="BEST_MATCH">Best Match</option>
+                                  <option value="LIBRARY">Library</option>
+                                </select>
                               </div>
                             </div>
                           </div>
